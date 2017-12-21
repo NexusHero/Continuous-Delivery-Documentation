@@ -1,2 +1,11 @@
-\section{Fehler bei der Transformation}
-In Kapite {\ref{entwicklung}} wurde gezeigt wie komplex die Etablierung von Continuous Delivery ist. Bei diesem Prozess können Fehler auftreten, die jetzt erläutert werden. 
+\section{Fehler bei der Transformation} \label{Fehler bei der Transformation}
+
+
+In Kapitel \ref{entwicklung} wurde gezeigt wie komplex die Etablierung von Continuous Delivery für Unternehmen ist. Bei diesem Prozess können Probleme auftreten, die in diesem Abschnitt diskutiert werden. Die Menge der Probleme wird in sechs Kategorien eingeteilt. Builddesign, Systemmodularisierung, Integration, Testphase, Release, Mensch und Organisationsstruktur.
+
+\subsection{Builddesign} \label{builddesgin}
+Bereits die Entscheidung, wie das Builddesign aufgebaut und konfiguriert wird, kann eine zukünftige Problemursache darstellen. Ein Grund hier für kann die Erstellung von komplexen und unflexiblen Buildskripten sein. Das Builddesign ist dadurch stark an das Zielsystem gekoppelt, sodass minimale Skritpänderung zu Buildfehlern führen können. Dies erfordert einer extensiven Pflege- und Wartungsbedarf, welches die Einführung einer DevOps-Kultur verlangsamt. Aber auch stellt die Modellierung des Systems eine Abhängigkeit für das Builddesign dar, da die Auflösung von Abhängigkeiten kritisch sein könnte, wie z. B. zyklische Abhängigkeiten \cite{Laukkanen.2017}.
+
+
+\subsection{Systemmodularisierung}  \label{Systemmodularisierung}
+Wie in Abschnitt \ref{builddesgin} erwähnt wurde stellt die Systemmodularisierung eine weitere Problemursache dar. Eine geeignete Systemmodellierung führt zu einer autonomen und unabhängigen Entwicklung. Eine ungeeignete Architektur stellt in erster Hinsicht kein Problem dar. Allerdings ihre Auswirkungen schon. Von einer ungeeigneten Architektur ist dann die Rede, wenn sie monolithisch gekoppelt sei. Eine ungeeignete Systemmodularisierung führt zu einem überhöhten Entwicklungsaufwand, Testbarkeit und Wartbarkeit. Dadurch nimmt die Fehleranfälligkeit des Systems und Code-Inkonsistenz zu, und die Software befindet sich in einem nicht aus-lieferbaren Zustand. Jedoch kann bei einer geeigneten Architektur diese Probleme auftreten, indem zu starke Systemmodellierung betrieben wird. Das führt zu einer Erhöhung der Komplexität, sodass neue Teammitglieder die Software schwer weiterentwickeln und pflegen können.
