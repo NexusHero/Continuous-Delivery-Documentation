@@ -1,4 +1,12 @@
 \section{Entwicklung zur DevOps-Kultur} \label{entwicklung}
+Continuous Delivery ist hauptsächlich mit der DevOps-Bewegung verbunden [3]. Beim Übernehmen von Continupus Delivery reicht es nicht, schlicht entsprechende Werkzeuge zu verwenden. Solange die Prozesse in der Organisation nicht ablaufen, wie bei einer gut geölten Maschine, kann hier keine Steigerung der Effizienz erreicht werden [5]. Der Schlüssel, um diese Prozesse gut zum Laufen zu bringen ist dabei DevOps. 
+DevOps fokussiert sich auf die Liefergeschwindigkeit, das kontinuierliche Testen in Produktionsähnlichen Umgebungen, kontinuierliche Rückmeldung und schnelle Reaktionsfähigkeit sowie das Auflösen von Teamgrenzen [5], um eine Kultur und ein Umfeld zu schaffen, indem das Erstellen, Testen und Freigeben von Software schnell, häufig und zuverlässig erfolgen kann. Ein Großteil von DevOps befasst sich demnach mit der Prozessverbesserung durch eine radikale Automatisierung manueller Prozesse [7]. Genau wie das Entwickeln von Funktionen oder das Beheben von Fehlern ist das durchaus echte Arbeit und muss auf die gleiche Weise verwaltet und priorisiert werden. Daher ist es wichtig den Teams entsprechende Ressourcen zur Verfügung zu stellen [5].
+Viele Unternehmen sind bereits dabei, DevOps erfolgreich umzusetzen. Allerdings bleiben nach wie vor kritische Barrieren bei der Entwicklung. Um diese Philosophie anzuwenden gibt es verschiedene Möglichkeiten. Dabei ist vermutlich die größte Hürde die Angst vor Veränderungen (siehe vorherige Abneigung gegenüber Clouds), da etwas Neues auszuprobieren entmutigend sein kann. 
+Es muss einem klar sein, was DevOps für das Unternehmen bedeutet. Beim Umsetzen braucht man klar definierte Ziele und einen vereinbarten Zeitrahmen, in welchen diese erreicht werden sollen. Zwei der größten Hindernisse, diese Disziplin erfolgreich umzusetzen sind die Unternehmensarchitektur sowie Unternehmenskultur, die davon beeinflusst werden.\\Es werden nun zwei Merkmalen der Unternehmensarchitektur eine hohe Priorisierung zuteil: Testbarkeit und Einsatzfähigkeit. Die Software wird bei Continuous Delivery in einer testbaren Umgebung entwickelt, sodass die meisten Fehler theoretisch direkt vom Entwickler erkannt werden können, indem automatisierte Tests ausgeführt werden. Es sollen keine komplexen Umgebungen mehr aufgesetzt werden, um den Großteil der Akzeptanz- und Regressionstests durchzuführen. Das Design für die Implementierung und die entsprechenden Tests beginnt zudem mit der Sicherstellung, dass die Services aus lose gekoppelten, gut gekapselten Komponenten oder Modulen bestehen (im Rahmen der objektorientierten Programmierung folgen solche Systeme den Prinzipien des SOLID-Designs). Jede Komponente oder jeder Dienst sollte auf Entwicklerarbeitsstationen, Testumgebungen oder in der Produktion vollständig automatisiert bereitgestellt werden können. In einer gut entworfenen Architektur ist es möglich, ein hohes Maß an Vertrauen zu erhalten, dass die Komponente richtig funktioniert, wenn sie auf diese Weise eingesetzt wird. Jede echte serviceorientierte Architektur sollte diese Eigenschaften haben. Die Microservices-Bewegung hat diese architektonischen Eigenschaften sogar explizit priorisiert. Müssen beispielsweise viele Microservices gleichzeitig freigegeben werden („Big Bang-Event“), ist es erforderlich, dass viele Teams in einer sorgfältigen Art und Weise zusammenarbeiten. Solche Bereitstellungen können dabei typischerweise viele Stunden oder sogar Tage in Anspruch nehmen und erfordern eine erhebliche Planung. Auch hier ist die Verbindung zu DevOps wieder erkennbar. Ein Unternehmen muss kontinuierlich und vor allem agil planen. Das setzt voraus, dass es in der Lage ist, sich schnell an die sich ändernden Marktbedingungen anzupassen [3]. 
+Auch die Unternehmenskultur ist von der Transformation betroffen. Obwohl diese nicht greifbar und nur schwer zu ändern ist, ist es wichtig, eine Kultur zu schaffen, in welcher alle Menschen einer Organisation bei der Verfolgung gemeinsamer Ziele zusammenarbeiten. Dies ging bereits durch den Soziologen Ron Westrum hervor (…), der die Wichtigkeit einer solchen Kultur betonte.
+Bei DevOps wird immer die primäre Bedeutung der Kultur hervorgehoben, mit besonderem Fokus auf einer effektiven Zusammenarbeit zwischen Entwicklungsteams und IT-Betriebsteams. Die Forschung zeigt, dass eine Win-Win-Beziehung zwischen Entwicklung und Operation ein signifikanter Prädiktor für die IT-Leistung ist. 
+Tatsächlich warten die leistungsstärksten Unternehmen nicht darauf, dass schlimme Dinge passieren, um zu lernen, wie sie sich verbessern können. Sie schaffen regelmäßig (kontrollierte) Unfälle, um schneller zu lernen als die Konkurrenz. Netflix hat dies auf ein neues Level mit ihrer Simian Army gebracht, die ständig ihre Infrastruktur sprengt, um die Ausfallsicherheit ihrer Systeme kontinuierlich zu testen.
+Das gemeinsame Thema, das in leistungsstarken Organisationen beobachtet werden kann, ist, dass sie immer versuchen, besser zu werden. 
 
 
 \subsection{Geschäftsprozesse}
@@ -11,9 +19,9 @@
 
 \subsection{Patterns}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{images/servicemodules.pdf}
-	\caption{Cloud-Servicemodelle} %Generelle
-	\label{fig:cnn_structure}
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{images/servicemodules.pdf}
+%	\caption{Cloud-Servicemodelle} %Generelle
+%	\label{fig:cnn_structure}
+%\end{figure}

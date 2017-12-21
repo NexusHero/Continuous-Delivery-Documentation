@@ -1,6 +1,5 @@
 \section{Fehler bei der Transformation} \label{Fehler bei der Transformation}
 
-
 In Kapitel \ref{entwicklung} wurde gezeigt wie komplex die Etablierung von Continuous Delivery für Unternehmen ist. Bei diesem Prozess können Probleme auftreten, die in diesem Abschnitt diskutiert werden. Die Menge der Probleme wird in sechs Kategorien eingeteilt. Builddesign, Systemmodularisierung, Integration, Testphase, Release, Mensch und Organisationsstruktur.
 
 \subsection{Builddesign} \label{builddesgin}
@@ -9,3 +8,9 @@ Bereits die Entscheidung, wie das Builddesign aufgebaut und konfiguriert wird, k
 
 \subsection{Systemmodularisierung}  \label{Systemmodularisierung}
 Wie in Abschnitt \ref{builddesgin} erwähnt wurde stellt die Systemmodularisierung eine weitere Problemursache dar. Eine geeignete Systemmodellierung führt zu einer autonomen und unabhängigen Entwicklung. Eine ungeeignete Architektur stellt in erster Hinsicht kein Problem dar. Allerdings ihre Auswirkungen schon. Von einer ungeeigneten Architektur ist dann die Rede, wenn sie monolithisch gekoppelt sei. Eine ungeeignete Systemmodularisierung führt zu einem überhöhten Entwicklungsaufwand, Testbarkeit und Wartbarkeit. Dadurch nimmt die Fehleranfälligkeit des Systems und Code-Inkonsistenz zu, und die Software befindet sich in einem nicht aus-lieferbaren Zustand. Jedoch kann bei einer geeigneten Architektur diese Probleme auftreten, indem zu starke Systemmodellierung betrieben wird. Das führt zu einer Erhöhung der Komplexität, sodass neue Teammitglieder die Software schwer weiterentwickeln und pflegen können.
+
+\subsection{Integration} \label{Integration}
+Die Integration umfasst die Probleme, die bei der Zusammenführung von Softwarekomponenten entstehen. Sobald diese Komponenten nicht wie vorgesehen zusammengeführt werden können, fangen die Probleme an. Nicht selten kommt es vor, dass Entwickler einmal täglich Quellcodeänderungen hochladen. Das hat die Folge, dass eine hohe Anzahl von Änderungen mit sich bringt, sodass im Fall eines Fehlers im Buildprozess, der Fehler nicht sofort identifiziert werden kann. Des Weiteren hat diese Vorgehensweise den Nachteil, dass überhöhter Netzwerklatenz erzeugt wird, aufgrund der hohen Änderungsmenge. 
+
+
+\subsection{Testphase}
