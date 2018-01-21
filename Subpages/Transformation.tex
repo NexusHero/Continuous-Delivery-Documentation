@@ -15,7 +15,7 @@ Bereits die Entscheidung, wie das Builddesign aufgebaut und konfiguriert wird, k
 Wie in Abschnitt \ref{builddesgin} aufgezeigt wurde stellt die Systemmodularisierung eine weitere Problemursache dar. Eine geeignete Systemmodellierung führt zu einer autonomen und unabhängigen Entwicklung. Von einer ungeeigneten Architektur ist die Rede, wenn sie monolithisch gekoppelt ist. Eine ungeeignete Systemmodularisierung führt zu einem überhöhten Entwicklungsaufwand, Testbarkeit und Wartbarkeit. Dadurch erhöht sich sowohl die Fehleranfälligkeit des Systems als auch die Code-Inkonsistenz. Daraus folgt, dass sich die Software in einem nicht auslieferbaren Zustand befindet. Jedoch kann auch bei einer geeigneten Architektur Probleme auftreten, indem zu starke Systemmodellierung betrieben wird. Das führt zu einer Erhöhung der Komplexität, sodass neue Teammitglieder die Software schwer weiterentwickeln und warten können \cite{Laukkanen.2017}. 
 
 \subsection{Integration} \label{Integration}
-Die Integration umfasst Probleme, die bei der Zusammenführung von Softwarekomponenten entstehen \cite{LianpingEtPaddy.2015}. Sobald diese nicht wie vorgesehen zusammengeführt werden, treten hier Probleme auf. Nicht selten kommt es vor, dass Entwickler einmal täglich Quellcodeänderungen hochladen. Das hat die Folge, dass eine hohe Anzahl von Änderungen mit sich bringt und diese im Konflikt mit anderen Änderungen stehen. Im Fall eines Fehlers im Buildprozess kann der Fehler nicht sofort identifiziert werden und es entsteht eine Arbeitsblockade (siehe Abbildung \ref{integrationsprobleme}). Des Weiteren hat diese Vorgehensweise den Nachteil, dass überhöhter Netzwerklatenz erzeugt wird. Eine oft genutzte Methode ist hier das Erstellen von mehreren Abzweigungen des Hauptentwicklungsstrangs. Diese Lösung ist allerdings problembehaftet. Während die Entwicklung am Hauptentwicklungsstrang voranschreitet, divergieren Verzweigungen, sodass die Vereinigung der Stränge zum Problem wird. Die Lösung dieser Viereinigungsprobleme resultiert in mehr Aufwand, was zur einer reduzierten Produktivität führt \cite{Laukkanen.2017}. 
+Die Integration umfasst Probleme, die bei der Zusammenführung von Softwarekomponenten entstehen \cite{LianpingEtPaddy.2015}. Sobald diese nicht wie vorgesehen zusammengeführt werden, treten hier Probleme auf. Nicht selten kommt es vor, dass Entwickler einmal täglich Quellcodeänderungen hochladen. Das hat die Folge, dass eine hohe Anzahl von Änderungen mit sich bringt und diese im Konflikt mit anderen Änderungen stehen. Im Fall eines Fehlers im Buildprozess kann der Fehler nicht sofort identifiziert werden und es entsteht eine Arbeitsblockade. Des Weiteren hat diese Vorgehensweise den Nachteil, dass überhöhter Netzwerklatenz erzeugt wird. Eine oft genutzte Methode ist hier das Erstellen von mehreren Abzweigungen des Hauptentwicklungsstrangs. Diese Lösung ist allerdings problembehaftet. Während die Entwicklung am Hauptentwicklungsstrang voranschreitet, divergieren Verzweigungen, sodass die Vereinigung der Stränge zum Problem wird. Die Lösung dieser Viereinigungsprobleme resultiert in mehr Aufwand, was zur einer reduzierten Produktivität führt \cite{Laukkanen.2017}. 
 
 \subsection{Testphase}
 Tests sollten eindeutige Validierung vornehmen. Bei bestimmten Tests, wie beispielsweise ''flaky tests'', entstehen hier langwierige Probleme. Bei diesen Tests werden zufällige Resultate erzeugt, die nicht determinierbar sind. Das erschwert die Testphase. Das geht aus dem folgenden Zitat hervor: 
@@ -29,9 +29,9 @@ Eine letzte Problemursache ist der Mensch, welcher aktuell die größte Herausfo
 \begin{quote}\glqq ...But it was hard to convince them that we needed to go through our implementation “hump of pain”to get the pieces in place that would allow us to have continuous integration. I worked on a small team and we didn’t seem to have any “extra”time for me to work on the infrastructure we needed. \grqq~\cite[S.373]{Stolberg.2009} \end{quote}
 %
 
-\begin{figure*}[ht]
-	\centering
-	\includegraphics[width=0.8\textwidth,]{images/all}
-	\caption{Übersicht der Probleme\cite{Laukkanen.2017}.}
-	\label{integrationsprobleme}
-\end{figure*}
+%\begin{figure*}[ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth,]{images/all}
+%	\caption{Übersicht der Probleme\cite{Laukkanen.2017}.}
+%	\label{integrationsprobleme}
+%\end{figure*}
